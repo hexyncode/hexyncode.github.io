@@ -121,7 +121,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),xn=j,Et=oe);const it={
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const kB=[["circle",{cx:"12",cy:"12",r:"4",key:"4exip2"}],["path",{d:"M12 2v2",key:"tus03m"}],["path",{d:"M12 20v2",key:"1lh1kg"}],["path",{d:"m4.93 4.93 1.41 1.41",key:"149t6j"}],["path",{d:"m17.66 17.66 1.41 1.41",key:"ptbguv"}],["path",{d:"M2 12h2",key:"1t8f8n"}],["path",{d:"M20 12h2",key:"1q8mjw"}],["path",{d:"m6.34 17.66-1.41 1.41",key:"1m8zz5"}],["path",{d:"m19.07 4.93-1.41 1.41",key:"1shlcs"}]],UB=Br("sun",kB),BB=[{id:"about",label:"about.py",icon:me.jsx(OB,{size:16})},{id:"projects",label:"projects.jsonc",icon:me.jsx(IB,{size:16})},{id:"experience",label:"experience.md",icon:me.jsx(MB,{size:16})},{id:"contact",label:"contact.ts",icon:me.jsx(xB,{size:16})}],FB=()=>{const[t,a]=V.useState("about"),[o,r]=V.useState(!0),l={about:`# About Me
+ */const kB=[["circle",{cx:"12",cy:"12",r:"4",key:"4exip2"}],["path",{d:"M12 2v2",key:"tus03m"}],["path",{d:"M12 20v2",key:"1lh1kg"}],["path",{d:"m4.93 4.93 1.41 1.41",key:"149t6j"}],["path",{d:"m17.66 17.66 1.41 1.41",key:"ptbguv"}],["path",{d:"M2 12h2",key:"1t8f8n"}],["path",{d:"M20 12h2",key:"1q8mjw"}],["path",{d:"m6.34 17.66-1.41 1.41",key:"1m8zz5"}],["path",{d:"m19.07 4.93-1.41 1.41",key:"1shlcs"}]],UB=Br("sun",kB),BB=[{id:"about",label:"about.py",icon:me.jsx(OB,{size:16})},{id:"projects",label:"projects.jsonc",icon:me.jsx(IB,{size:16})},{id:"experience",label:"experience.cs",icon:me.jsx(MB,{size:16})},{id:"contact",label:"contact.ts",icon:me.jsx(xB,{size:16})}],FB=()=>{const[t,a]=V.useState("about"),[o,r]=V.useState(!0),l={about:`# About Me
     
 def about():
     name = "Callum Howell"
@@ -146,6 +146,15 @@ if __name__ == "__main__":
     "demo": "https://clientflow.onrender.dev",
     "github": "https://github.com/hexyncode/bizaide"
   }
+},
+{
+  "name": "QuasarOS",
+  "description": "A cloud-based computing system based from the Quasar Framework",
+  "tech": ["VueJS"],
+  "links": {
+    "demo": "https://quasaros.slippuu.com",
+    "github": "https://github.com/hexyncode/quasaros"
+  }
 }
 `,experience:`// Experience
 class Experience
@@ -157,19 +166,27 @@ class Experience
     {
         var experiences = new List<Experience>
         {
-            new Experience { Role = "Freelance Full-Stack Developer", Description = "Built custom business tools for tax and logistics." },
-            new Experience { Role = "Open Source Contributor", Description = "PRs to Django REST framework and custom UI libraries." }
+            new Experience { 
+                Role = "Freelance Full-Stack Developer",
+                Company = "Freelance",
+                Description = "Building custom tools and apps for a wide variety of user applications"
+            },
+            new Experience {
+                Role = "VBA Developer,
+                Company = "SS&C",
+                Description = "Building tools to empower Excel for employees and clients across the worldwide financial sector"
+            }
         };
 
         foreach (var exp in experiences)
         {
-            Console.WriteLine($"- {exp.Role}: {exp.Description}");
+            Console.WriteLine($"- {exp.Role} @ {exp.Company}: {exp.Description}");
         }
     }
 }
 `,contact:`// Contact Me
 const contact = {
-  email: "callum@example.com",
-  github: "https://github.com/callum",
-  linkedin: "https://linkedin.com/in/callum"
-}`};return me.jsx("main",{className:`min-h-screen flex flex-col font-mono px-4 py-6 sm:px-6 md:px-12 overflow-x-hidden transition-colors duration-300 ${o?"bg-[#1e1e1e] text-white":"bg-white text-black"}`,children:me.jsxs("div",{className:"w-full max-w-6xl mx-auto border border-zinc-700 rounded-lg overflow-hidden shadow-lg",children:[me.jsxs("div",{className:`px-4 py-2 flex items-center gap-2 ${o?"bg-zinc-800 text-zinc-400":"bg-zinc-200 text-zinc-800"}`,children:[me.jsx("span",{className:"h-3 w-3 rounded-full bg-red-500"}),me.jsx("span",{className:"h-3 w-3 rounded-full bg-yellow-500"}),me.jsx("span",{className:"h-3 w-3 rounded-full bg-green-500"}),me.jsx("span",{className:"ml-4 text-sm",children:"~/portfolio"}),me.jsx(yD,{className:`ml-auto text-xs px-2 py-1 ${o?"bg-zinc-700 text-zinc-400":"bg-zinc-200"}`,onClick:()=>r(u=>!u),variant:"outline",children:o?me.jsx(PB,{className:"h-4 w-4"}):me.jsx(UB,{className:"h-4 w-4"})})]}),me.jsxs("div",{className:`${o?"bg-[#1c1b1b]":"bg-[#f6f6f6]"} flex flex-col md:flex-row w-full`,children:[me.jsx("aside",{className:`${o?"bg-zinc-800 border-zinc-700":"bg-zinc-200 border-zinc-300"} w-full md:w-48 border-b md:border-r p-3`,children:me.jsx("ul",{className:"text-sm space-y-2",children:BB.map(u=>me.jsxs("li",{className:`flex items-center gap-2 cursor-pointer px-2 py-1 rounded hover:bg-zinc-700 ${t===u.id?"bg-zinc-700 text-blue-400":""}`,onClick:()=>a(u.id),children:[u.icon," ",u.label]},u.id))})}),me.jsx("div",{className:"flex-1 p-4",children:me.jsx(RD,{value:t,onValueChange:a,children:me.jsx(MD,{mode:"wait",children:me.jsx(_P.div,{initial:{opacity:0,y:10},animate:{opacity:1,y:0},exit:{opacity:0,y:-10},transition:{duration:.2},className:`${o?"bg-zinc-800":"bg-zinc-200"} rounded-md`,children:me.jsx(vD,{value:t,className:"focus:outline-none",children:me.jsx(zy,{language:t==="projects"?"json":t==="contact"?"typescript":t==="experience"?"csharp":"python",style:o?TB:bB,wrapLongLines:!0,customStyle:{backgroundColor:o?"#1c1b1b":"#f6f6f6",whiteSpace:"pre-wrap"},children:l[t]||"Loading..."})})},t)})})})]}),me.jsx("footer",{className:`text-xs px-4 py-2 text-center ${o?"bg-zinc-800 text-zinc-400":"bg-zinc-200 text-zinc-700"}`,children:"© 2025 Callum Howell. Made with <3"})]})})};aI.createRoot(document.getElementById("root")).render(me.jsx(Yt.StrictMode,{children:me.jsx(FB,{})}));
+  email: "callum@slippuu.com",
+  github: "https://github.com/hexyncode",
+  cell: "479 492 0425"
+}`};return me.jsx("main",{className:`min-h-screen flex flex-col font-mono px-4 py-6 sm:px-6 md:px-12 overflow-x-hidden transition-colors duration-300 ${o?"bg-[#1e1e1e] text-white":"bg-white text-black"}`,children:me.jsxs("div",{className:"w-full max-w-6xl mx-auto border border-zinc-700 rounded-lg overflow-hidden shadow-lg",children:[me.jsxs("div",{className:`px-4 py-2 flex items-center gap-2 ${o?"bg-zinc-800 text-zinc-400":"bg-zinc-200 text-zinc-800"}`,children:[me.jsx("span",{className:"h-3 w-3 rounded-full bg-red-500"}),me.jsx("span",{className:"h-3 w-3 rounded-full bg-yellow-500"}),me.jsx("span",{className:"h-3 w-3 rounded-full bg-green-500"}),me.jsx("span",{className:"ml-4 text-sm",children:"~/callumhowell-portfolio"}),me.jsx(yD,{className:`ml-auto text-xs px-2 py-1 ${o?"bg-zinc-700 text-zinc-400":"bg-zinc-200"}`,onClick:()=>r(u=>!u),variant:"outline",children:o?me.jsx(PB,{className:"h-4 w-4"}):me.jsx(UB,{className:"h-4 w-4"})})]}),me.jsxs("div",{className:`${o?"bg-[#1c1b1b]":"bg-[#f6f6f6]"} flex flex-col md:flex-row w-full`,children:[me.jsx("aside",{className:`${o?"bg-zinc-800 border-zinc-700":"bg-zinc-200 border-zinc-300"} w-full md:w-48 border-b md:border-r p-3`,children:me.jsx("ul",{className:"text-sm space-y-2",children:BB.map(u=>me.jsxs("li",{className:`flex items-center gap-2 cursor-pointer px-2 py-1 rounded hover:bg-zinc-700 ${t===u.id?"bg-zinc-700 text-blue-400":""}`,onClick:()=>a(u.id),children:[u.icon," ",u.label]},u.id))})}),me.jsx("div",{className:"flex-1 p-4",children:me.jsx(RD,{value:t,onValueChange:a,children:me.jsx(MD,{mode:"wait",children:me.jsx(_P.div,{initial:{opacity:0,y:10},animate:{opacity:1,y:0},exit:{opacity:0,y:-10},transition:{duration:.2},className:`${o?"bg-zinc-800":"bg-zinc-200"} rounded-md`,children:me.jsx(vD,{value:t,className:"focus:outline-none",children:me.jsx(zy,{language:t==="projects"?"json":t==="contact"?"typescript":t==="experience"?"csharp":"python",style:o?TB:bB,wrapLongLines:!0,customStyle:{backgroundColor:o?"#1c1b1b":"#f6f6f6",whiteSpace:"pre-wrap"},children:l[t]||"Loading..."})})},t)})})})]}),me.jsx("footer",{className:`text-xs px-4 py-2 text-center ${o?"bg-zinc-800 text-zinc-400":"bg-zinc-200 text-zinc-700"}`,children:"© 2025 Callum Howell. Made with <3"})]})})};aI.createRoot(document.getElementById("root")).render(me.jsx(Yt.StrictMode,{children:me.jsx(FB,{})}));
