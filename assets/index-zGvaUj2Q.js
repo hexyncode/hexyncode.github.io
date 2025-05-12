@@ -155,13 +155,13 @@ if __name__ == "__main__":
   }
 },
 {
-  "name": "NimbusOS",
-  "description": "An experimental cloud-based Operating System built to mimic a standard OS",
-  "tech": ["React", "Django", "PostgreSQL"],
+  "name": "PostPilot AI",
+  "description": "AI-powered tool that creates status updates as a human and posts them to a page, with continuous stories",
+  "tech": ["React", "Postgres", "Django", "OpenAI", "Facebook Graph API"],
   "links": {
     "demo": "N/A",
-    "github": "https://github.com/hexyncode/NimbusOS",
-    "feature": "https://hexyncode.github.io/NimbusOS"
+    "github": "https://github.com/hexyncode/postpilotai",
+    "feature": "N/A"
   }
 },
 {
@@ -182,6 +182,16 @@ if __name__ == "__main__":
     "demo": "N/A",
     "github": "https://github.com/hexyncode/TakeoutCleaner",
     "feature": "N/A"
+  }
+},
+{
+  "name": "NimbusOS",
+  "description": "An experimental cloud-based Operating System built to mimic a standard OS",
+  "tech": ["React", "Django", "PostgreSQL"],
+  "links": {
+    "demo": "N/A",
+    "github": "https://github.com/hexyncode/NimbusOS",
+    "feature": "https://hexyncode.github.io/NimbusOS"
   }
 },
 
