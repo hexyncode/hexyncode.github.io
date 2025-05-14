@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HexynCode Feature: weather_cli</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+<body class="bg-zinc-800 text-zinc-200">
+    <div x-data="{ lightboxOpen: false, lightboxImage: '' }">
+  <div class="max-w-3xl mx-auto p-6 space-y-10">
+    <a href="/" class="text-blue-600 hover:underline text-sm font-medium block mb-2">
+      ← Back to Home
+    </a>
+    <template x-for="(img, idx) in [
+        { src: 'Output1.png', title: 'Default Settings },
+        { src: 'Output2.png', title: 'Metric Argument' },
+        { src: 'Output3.png', title: 'Imperial Argument' },
+    ]" :key="idx">
+    <section class="space-y-4">
+        <h2 class="text-2xl font-semibold" x-text="img.title"></h2>
+        <div class="w-full aspect-[5/3]">
+          <img 
+            :src="img.src" 
+            alt="img.title" 
+            class="w-full h-full object-cover rounded-lg shadow cursor-pointer"
+            @click="lightboxImage = img.src; lightboxOpen = true"
+          />
+        </div>
+      </section>
+</template>
+</div>
+<div 
+x-show="lightboxOpen"
+x-transition
+@keydown.window.escape="lightboxOpen = false"
+@click.away="lightboxOpen = false"
+class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
+>
+<img 
+  :src="lightboxImage" 
+  alt="Expanded view" 
+  class="max-w-full max-h-full rounded-lg shadow-lg"
+/>
+<!-- Close Button -->
+<button 
+  @click="lightboxOpen = false"
+  class="absolute top-4 right-4 text-white text-2xl font-bold"
+  aria-label="Close"
+>
+  &times;
+</button>
+</div>
+</div>
+</body>
+</html>

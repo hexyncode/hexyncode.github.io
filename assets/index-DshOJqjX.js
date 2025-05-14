@@ -166,6 +166,16 @@ if __name__ == "__main__":
   }
 },
 {
+  "name": "weather_cli",
+  "description": "Simple, FOSS built with Python to pull the current weather for any location and post into stdout.",
+  "tech": ["Python"],
+  "links": {
+    "demo": "N/A",
+    "github": "https://github.com/hexyncode/weather_cli",
+    "feature": "https://hexyncode.github.io/projects/weather_cli"
+  }
+},
+{
   "name": "TranslaQ",
   "description": "AI-powered tool to translate English to Spanish in 'business formal' with email and TTS capabilities",
   "tech": ["OpenAI", "Django"],
