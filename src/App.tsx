@@ -63,6 +63,7 @@ if __name__ == "__main__":
 `,
 
     projects: `// Projects
+// Clickable links are located at the bottom
 {
   "name": "ClientFlow",
   "description": "CRM platform focused on invoicing and taxes for sole traders and small businesses",
@@ -70,7 +71,7 @@ if __name__ == "__main__":
   "links": {
     "demo": "N/A",
     "github": "https://github.com/hexyncode/bizaide",
-    "feature": "https://hexyncode.github.io/bizaide"
+    "feature": "https://hexyncode.github.io/projects/clientflow"
   }
 },
 {
@@ -80,7 +81,17 @@ if __name__ == "__main__":
   "links": {
     "demo": "N/A",
     "github": "https://github.com/hexyncode/postpilotai",
-    "feature": "N/A"
+    "feature": "https://hexyncode.github.io/projects/postpilotai"
+  }
+},
+{
+  "name": "weather_cli",
+  "description": "Simple, FOSS built with Python to pull the current weather for any location and post into stdout.",
+  "tech": ["Python"],
+  "links": {
+    "demo": "N/A",
+    "github": "https://github.com/hexyncode/weather_cli",
+    "feature": "https://hexyncode.github.io/projects/weather_cli"
   }
 },
 {
