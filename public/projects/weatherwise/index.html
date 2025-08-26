@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favico.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2196F3" /> <meta name="description" content="WeatherWise: Get instant weather updates and suggestions." />
+    <title>WeatherWise</title>
+    <link rel="manifest" href="manifest.json" /> 
+    <script type="module" crossorigin src="assets/index-BTFsH0dG.js"></script>
+    <link rel="stylesheet" crossorigin href="assets/index-BN02SEwR.css">
+  </head>
+  <body>
+    <div id="root"></div>
+        <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registered: ', registration);
+                    })
+                    .catch(error => {
+                        console.error('Service Worker registration failed: ', error);
+                    });
+            });
+        }
+    </script>
+  </body>
+</html>

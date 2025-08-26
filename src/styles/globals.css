@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: oklch(0.235 0 129.63);
+  --color-background: oklch(0.1822 0 0);
+  --color-text: oklch(0.9067 0 0);
+  --color-secondary: oklch(0.7058 0 0);
+  --color-accent: oklch(0.75 0.1406 276.35);
+  --color-accent-hover: oklch(0.6246 0.1406 276.35);
+  --font-sans: ['var(--font-inter)', 'sans-serif']
+
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  @apply bg-background text-text;
+}
