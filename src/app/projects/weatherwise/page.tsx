@@ -6,7 +6,7 @@ export default function WeatherWisePage() {
       <ReturnBanner/>
       <div className="w-full h-[90vh] mt-12">
         <iframe
-          src="/projects/weatherwise/index.html"
+          src="/projects/weatherwise-proj/index.html"
           style={{ width: '100%', height: '100%', border: 'none' }}
         />
       </div>
