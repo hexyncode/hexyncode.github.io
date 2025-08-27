@@ -7,7 +7,7 @@ const fontInter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Callum Howell - UI/UX Designer & Software Engineer",
+  title: "HexynCode - UI/UX Designer & Software Engineer",
   description: "Portfolio of Callum Howell, a passionate UI/UX Designer and Software Engineer.",
 };
 
