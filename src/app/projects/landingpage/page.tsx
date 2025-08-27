@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useEffect, useRef, ReactNode, RefObject } from 'react';
+import ReturnBanner from '@/components/ReturnBanner';
 
 type IconProps = {
   children: ReactNode;
@@ -341,6 +342,8 @@ export default function App() {
   const serviceAreas = ["Toronto", "Mississauga", "Brampton", "Hamilton", "Markham", "Vaughan", "Oakville", "Burlington", "Richmond Hill", "Ottawa", "London", "Kitchener-Waterloo"];
 
   return (
+    <div>
+      <ReturnBanner/>
     <div className="bg-white font-['Inter'] text-gray-800">
       <Header />
       <main>
@@ -515,6 +518,7 @@ export default function App() {
         </AnimatedSection>
       </main>
       <Footer />
+    </div>
     </div>
   );
 }

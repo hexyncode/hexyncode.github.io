@@ -5,7 +5,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 w-full z-50 bg-primary/80 backdrop-blur-sm">
       <div className="container mx-auto flex justify-between items-center p-4">
         <Link href="/" className="text-2xl font-bold text-accent">
-          Callum Howell
+          &lt;HexynCode /&gt;
         </Link>
         <nav className="space-x-6">
           <Link href="#about" className="hover:text-accent transition-colors">
